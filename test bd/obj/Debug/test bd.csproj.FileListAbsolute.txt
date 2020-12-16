@@ -1,0 +1,20 @@
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test_tt.mdb
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test bd.exe.config
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test bd.exe
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test bd.pdb
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.csprojAssemblyReference.cache
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.Form1.resources
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.Properties.Resources.resources
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.csproj.GenerateResource.cache
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.csproj.CoreCompileInputs.cache
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.exe
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.pdb
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.AddForm.resources
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\Microsoft.PowerBI.Api.dll
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\Newtonsoft.Json.dll
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\System.Security.Cryptography.Cng.dll
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\Newtonsoft.Json.xml
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\System.Security.Cryptography.Cng.xml
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test bd.csproj.CopyComplete
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.catalog.resources
