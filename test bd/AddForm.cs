@@ -51,7 +51,7 @@ namespace test_bd
 
         private void телефонToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.tbPhone_em.Mask = @"00-000-000";
+            this.tbPhone_em.Mask = @"+00-000-000";
             
         }
 

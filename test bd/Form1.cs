@@ -25,7 +25,7 @@ namespace test_bd
     
     public partial class Form1 : Form
     {
-        OleDbConnection con;
+        OleDbConnection con, cot1;
         OleDbDataAdapter da, sa;
       //  OleDbCommand cmd;
         DataSet ds, fs;
@@ -44,16 +44,17 @@ namespace test_bd
         {
             //con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Projects\Пример приложения для работы с Access базой\Пример приложения для работы с Access базой\bin\Debug\dbSchool.accdb");
             con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=test_tt.mdb");
+            cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt.mdb");
             da = new OleDbDataAdapter("SELECT *FROM contacts", con);
             sa = new OleDbDataAdapter("select * from phone_type", con);
-            ds = new DataSet();
-            fs = new DataSet();
-            con.Open();
-            da.Fill(ds, "contacts");
-            sa.Fill(fs, "phone_type");
-            dataGridView1.DataSource = ds.Tables["contacts"];
-            dataGridView1.DataSource = fs.Tables["phone_type"];
-            con.Close();
+             ds = new DataSet();
+              fs = new DataSet();
+              con.Open();
+               da.Fill(ds, "contacts");
+              sa.Fill(fs, "phone_type");
+             /* dataGridView1.DataSource = ds.Tables["contacts"];
+              dataGridView1.DataSource = fs.Tables["phone_type"];
+              con.Close();*/
         }
         private void Form1_Load(object sender, EventArgs e)
         {
