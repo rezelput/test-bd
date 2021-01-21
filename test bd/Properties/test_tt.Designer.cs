@@ -13,11 +13,11 @@ namespace test_bd.Properties {
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+    internal sealed partial class test_tt : global::System.Configuration.ApplicationSettingsBase {
         
-        private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
+        private static test_tt defaultInstance = ((test_tt)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new test_tt())));
         
-        public static Settings Default {
+        public static test_tt Default {
             get {
                 return defaultInstance;
             }
@@ -31,6 +31,17 @@ namespace test_bd.Properties {
         public string test_ttConnectionString {
             get {
                 return ((string)(this["test_ttConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"|DataDirectory|\\test_tt 4 edit.mdb\"" +
+            "")]
+        public string test_tt_4_editConnectionString {
+            get {
+                return ((string)(this["test_tt_4_editConnectionString"]));
             }
         }
     }

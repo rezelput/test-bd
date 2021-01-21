@@ -1,7 +1,7 @@
 ﻿
 namespace test_bd
 {
-    partial class AddForm
+    partial class Add2Form
     {
         /// <summary>
         /// Required designer variable.

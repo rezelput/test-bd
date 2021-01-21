@@ -26,7 +26,7 @@ namespace test_bd
             Form1 main = this.Owner as Form1;
             if (main != null)
             {
-                DataRow nRow = main.test_ttDataSet.Tables[0].NewRow();
+                DataRow nRow = main.test_tt_4_editDataSet.Tables[0].NewRow();
 
                 int rc = main.dataGridView1.RowCount + 1;
                 int tc = main.dataGridView1.RowCount + 1;
@@ -35,8 +35,8 @@ namespace test_bd
                 nRow[4] = tbPhone_em.Text;
                 nRow[4] = tbPhone_em.Text;
                 nRow[2] = tc;
-                main.test_ttDataSet.Tables[0].Rows.Add(nRow);
-                main.test_ttDataSet.Tables[0].AcceptChanges();
+                main.test_tt_4_editDataSet.Tables[0].Rows.Add(nRow);
+                main.test_tt_4_editDataSet.Tables[0].AcceptChanges();
                 main.dataGridView1.Refresh();
                 tbName.Text = "";
                 tbPhone_em.Text = "";

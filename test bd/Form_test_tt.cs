@@ -43,15 +43,15 @@ namespace test_bd
         void test_tt()
         {
             //con = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Projects\Пример приложения для работы с Access базой\Пример приложения для работы с Access базой\bin\Debug\dbSchool.accdb");
-            con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=test_tt.mdb");
-            cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt.mdb");
-            da = new OleDbDataAdapter("SELECT *FROM contacts", con);
-            sa = new OleDbDataAdapter("select * from phone_type", con);
+           // con = new OleDbConnection("Provider=Microsoft.ACE.Oledb.12.0;Data Source=test_tt_4_edit.mdb");
+            cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt_4_edit.mdb");
+            da = new OleDbDataAdapter("SELECT *FROM contacts", cot1);
+            sa = new OleDbDataAdapter("select * from phone", cot1);
              ds = new DataSet();
               fs = new DataSet();
-              con.Open();
+              cot1.Open();
                da.Fill(ds, "contacts");
-              sa.Fill(fs, "phone_type");
+              sa.Fill(fs, "phone");
              /* dataGridView1.DataSource = ds.Tables["contacts"];
               dataGridView1.DataSource = fs.Tables["phone_type"];
               con.Close();*/
@@ -59,11 +59,11 @@ namespace test_bd
         private void Form1_Load(object sender, EventArgs e)
         {
             test_tt();
-            // TODO: This line of code loads data into the 'accountDataSet.Account' table. You can move, or remove it, as needed.
-           // this.contactsTableAdapter.Fill(this.test_ttDataSet.contacts);
-
-            // TODO: This line of code loads data into the 'accountDataSet.Worker' table. You can move, or remove it, as needed.
-          //  this.phone_typeTableAdapter.Fill(this.test_ttDataSet.phone_type);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_editDataSet.contacts". При необходимости она может быть перемещена или удалена.
+            this.contactsTableAdapter.Fill(this.test_tt_4_editDataSet.tablecontacts);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_editDataSet.contacts". При необходимости она может быть перемещена или удалена.
+            
+            
         }
         //Display Data in DataGridView
         /* private void DisplayData()
@@ -114,16 +114,28 @@ namespace test_bd
             }
         }
 
+        private void userToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            user_name af = new user_name();
+            af.Owner = this;
+            af.Show();
+        }
+
+        private void phoneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void справочникToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            catalog af = new catalog();
+            user_name af = new user_name();
             af.Owner = this;
             af.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            contactsTableAdapter.Update(test_ttDataSet);
+            contactsTableAdapter.Update(test_tt_4_editDataSet);
         }
         
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
