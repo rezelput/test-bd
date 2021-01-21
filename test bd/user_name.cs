@@ -15,6 +15,8 @@ namespace test_bd
     {
         public string CmdText = "SELECT * FROM [phone_type]";
         public string ConnString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=test_tt_4_edit.mdb";//"Provider=Microsoft.Jet.OLEDB.4.0;DataSource=C:\\Programs\\C_Sharp\\WindowsFormsApplication1\\test_tt.mdb";
+
+        
         public user_name()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace test_bd
             // заполняем таблицу Order  
             // данными из базы данных
             dataAdapter.Fill(ds, "[phone_type]");
-           // dataGridView1.DataSource = ds.Tables[0].DefaultView;
+            // dataGridView1.DataSource = ds.Tables[0].DefaultView;
         }
 
         private void data_phone_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -44,6 +46,23 @@ namespace test_bd
             // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_editDataSet.user_name". При необходимости она может быть перемещена или удалена.
             this.user_nameTableAdapter.Fill(this.test_tt_4_editDataSet.user_name);
 
+        }
+
+        
+
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form_test_tt f = new Form_test_tt();
+            f.ShowDialog();
+            this.Close();
+        }
+
+       
+
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

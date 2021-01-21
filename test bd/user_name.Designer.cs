@@ -31,18 +31,18 @@ namespace test_bd
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
-            this.usernameBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.user_nameTableAdapter = new test_bd.test_tt_4_editDataSetTableAdapters.user_nameTableAdapter();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
+            this.user_nameTableAdapter = new test_bd.test_tt_4_editDataSetTableAdapters.user_nameTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.formToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,20 +59,6 @@ namespace test_bd
             this.dataGridView2.Size = new System.Drawing.Size(245, 167);
             this.dataGridView2.TabIndex = 0;
             // 
-            // test_tt_4_editDataSet
-            // 
-            this.test_tt_4_editDataSet.DataSetName = "test_tt_4_editDataSet";
-            this.test_tt_4_editDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // usernameBindingSource
-            // 
-            this.usernameBindingSource.DataMember = "user_name";
-            this.usernameBindingSource.DataSource = this.test_tt_4_editDataSet;
-            // 
-            // user_nameTableAdapter
-            // 
-            this.user_nameTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn1
             // 
             this.dataGridViewTextBoxColumn1.DataPropertyName = "id";
@@ -84,6 +70,20 @@ namespace test_bd
             this.usernameDataGridViewTextBoxColumn.DataPropertyName = "user_name";
             this.usernameDataGridViewTextBoxColumn.HeaderText = "user_name";
             this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            // 
+            // usernameBindingSource
+            // 
+            this.usernameBindingSource.DataMember = "user_name";
+            this.usernameBindingSource.DataSource = this.test_tt_4_editDataSet;
+            // 
+            // test_tt_4_editDataSet
+            // 
+            this.test_tt_4_editDataSet.DataSetName = "test_tt_4_editDataSet";
+            this.test_tt_4_editDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // user_nameTableAdapter
+            // 
+            this.user_nameTableAdapter.ClearBeforeFill = true;
             // 
             // menuStrip1
             // 
@@ -108,13 +108,15 @@ namespace test_bd
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem2.Text = "1";
+            this.toolStripMenuItem2.Text = "Update";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.toolStripMenuItem2_Click);
             // 
             // toolStripMenuItem3
             // 
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem3.Text = "2";
+            this.toolStripMenuItem3.Text = "to Owner form";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.toolStripMenuItem3_Click);
             // 
             // user_name
             // 
@@ -126,8 +128,8 @@ namespace test_bd
             this.Text = "user_name";
             this.Load += new System.EventHandler(this.user_name_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usernameBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

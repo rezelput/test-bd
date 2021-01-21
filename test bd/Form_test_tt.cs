@@ -116,9 +116,10 @@ namespace test_bd
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            user_name us = new user_name();
-            us.Owner = this;
-            us.Show();
+            Hide();
+            user_name f = new user_name();
+            f.ShowDialog();
+            this.Close();
         }
 
         private void phoneToolStripMenuItem_Click(object sender, EventArgs e)
