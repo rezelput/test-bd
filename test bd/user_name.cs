@@ -24,7 +24,7 @@ namespace test_bd
             // заполняем таблицу Order  
             // данными из базы данных
             dataAdapter.Fill(ds, "[phone_type]");
-            dataGridView1.DataSource = ds.Tables[0].DefaultView;
+           // dataGridView1.DataSource = ds.Tables[0].DefaultView;
         }
 
         private void data_phone_CellContentClick(object sender, DataGridViewCellEventArgs e)

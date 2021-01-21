@@ -23,13 +23,13 @@ namespace test_bd
             MessageBox.Show(inf);
         }*/
     
-    public partial class Form1 : Form
+    public partial class Form_test_tt : Form
     {
         OleDbConnection con, cot1;
         OleDbDataAdapter da, sa;
       //  OleDbCommand cmd;
         DataSet ds, fs;
-        public Form1()
+        public Form_test_tt()
         {
           /*  SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Sample;Integrated Security=true;");
             SqlCommand cmd;
@@ -100,7 +100,7 @@ namespace test_bd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddForm af = new AddForm();
+            Add2Form af = new Add2Form();
             af.Owner = this;
             af.Show();
         }
@@ -116,21 +116,21 @@ namespace test_bd
 
         private void userToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            user_name af = new user_name();
-            af.Owner = this;
-            af.Show();
+            user_name us = new user_name();
+            us.Owner = this;
+            us.Show();
         }
 
         private void phoneToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            phone ph = new phone();
+            //ph.Owner = this;
+            ph.Show();
         }
 
         private void справочникToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            user_name af = new user_name();
-            af.Owner = this;
-            af.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)

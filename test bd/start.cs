@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace test_bd
 {
-    static class Program
+    static class start
     {
         /// <summary>
         /// Главная точка входа для приложения.

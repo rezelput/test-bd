@@ -12,10 +12,10 @@ using System.Data.SqlClient;
 
 namespace test_bd
 {
-    public partial class AddForm : Form
+    public partial class Add2Form : Form
     {
         
-        public AddForm()
+        public Add2Form()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace test_bd
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form1 main = this.Owner as Form1;
+            Form_test_tt main = this.Owner as Form_test_tt;
             if (main != null)
             {
                 DataRow nRow = main.test_tt_4_editDataSet.Tables[0].NewRow();
