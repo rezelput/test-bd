@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="B:\кубгту 2 курс\курсач ИТ\test bd" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="test bd" t="IncludeRecursive">
+        <e p="Add2Form.cs" t="Include" />
+        <e p="Add2Form.Designer.cs" t="Include" />
+        <e p="Add2Form.resx" t="Include" />
+        <e p="App1.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Form_test_tt.cs" t="Include" />
+        <e p="Form_test_tt.Designer.cs" t="Include" />
+        <e p="Form_test_tt.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="phone.cs" t="Include" />
+        <e p="phone.Designer.cs" t="Include" />
+        <e p="phone.resx" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.cs" t="Include" />
+          <e p="test_tt.Designer.cs" t="Include" />
+          <e p="test_tt.settings" t="Include" />
+        </e>
+        <e p="start.cs" t="Include" />
+        <e p="test_bd.csproj" t="IncludeRecursive" />
+        <e p="test_tt 4 edit.mdb" t="Include" />
+        <e p="test_tt_4_editDataSet.Designer.cs" t="Include" />
+        <e p="test_tt_4_editDataSet.xsc" t="Include" />
+        <e p="test_tt_4_editDataSet.xsd" t="Include" />
+        <e p="test_tt_4_editDataSet.xss" t="Include" />
+        <e p="user_name.cs" t="Include" />
+        <e p="user_name.Designer.cs" t="Include" />
+        <e p="user_name.resx" t="Include" />
+      </e>
+      <e p="test_bd.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\milky\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\milky\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_test_bd.-350085002.00" t="ExcludeRecursive" />
+  </component>
+</project>

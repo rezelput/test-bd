@@ -34,7 +34,7 @@ namespace test_bd
                 nRow[1] = tbName.Text;
                 nRow[4] = tbPhone_em.Text;
                 nRow[4] = tbPhone_em.Text;
-                nRow[2] = tc;
+               // nRow[2] = tc;
                 main.test_tt_4_editDataSet.Tables[0].Rows.Add(nRow);
                 main.test_tt_4_editDataSet.Tables[0].AcceptChanges();
                 main.dataGridView1.Refresh();
