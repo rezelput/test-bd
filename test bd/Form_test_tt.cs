@@ -25,7 +25,7 @@ namespace test_bd
     
     public partial class Form_test_tt : Form
     {
-        OleDbConnection con, cot1;
+        OleDbConnection cot1;
         OleDbDataAdapter da, sa;
       //  OleDbCommand cmd;
         DataSet ds, fs;
