@@ -124,9 +124,10 @@ namespace test_bd
 
         private void phoneToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Hide();
             phone ph = new phone();
-            //ph.Owner = this;
-            ph.Show();
+            ph.ShowDialog();
+            this.Close();
         }
 
         private void справочникToolStripMenuItem_Click(object sender, EventArgs e)
@@ -137,11 +138,12 @@ namespace test_bd
         private void button2_Click(object sender, EventArgs e)
         {
             contactsTableAdapter.Update(test_tt_4_editDataSet);
+            dataGridView1.Refresh();
         }
         
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            
+           
             /* 
              DataGridViewColumn column1 = new DataGridViewColumn();
              DataGridViewComboBoxCell cell1 = new DataGridViewComboBoxCell();
@@ -160,17 +162,17 @@ namespace test_bd
 
              this.dataGridView1.Rows.Add(row);
             */
-                // соединяемся с сервером
-          /*      OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;" + "Data Source=\\\\SRV\\1\\1\\test_tt.mdb");
-            // подготавливаем команду
-            OleDbCommand command = new OleDbCommand("SELECT * FROM phone_type");
-            command.Connection = connection;
-            // создаем адаптер и набор данных
-            OleDbDataAdapter adapter = new OleDbDataAdapter(command);
-            // заполняем набор данных
-            adapter.Fill(Dataset);
-            bindingSource1.DataSource = dataset.Tables[0];
-            dataGridView1.DataSource = bindingSource1;*/
+            // соединяемся с сервером
+            /*      OleDbConnection connection = new OleDbConnection("Provider=Microsoft.Jet.OleDb.4.0;" + "Data Source=\\\\SRV\\1\\1\\test_tt.mdb");
+              // подготавливаем команду
+              OleDbCommand command = new OleDbCommand("SELECT * FROM phone_type");
+              command.Connection = connection;
+              // создаем адаптер и набор данных
+              OleDbDataAdapter adapter = new OleDbDataAdapter(command);
+              // заполняем набор данных
+              adapter.Fill(Dataset);
+              bindingSource1.DataSource = dataset.Tables[0];
+              dataGridView1.DataSource = bindingSource1;*/
         }
     }
     

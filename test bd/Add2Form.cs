@@ -24,17 +24,28 @@ namespace test_bd
         private void button1_Click(object sender, EventArgs e)
         {
             Form_test_tt main = this.Owner as Form_test_tt;
+            user_name urs = this.Owner as user_name;
+            phone phtt = this.Owner as phone;
             if (main != null)
             {
                 DataRow nRow = main.test_tt_4_editDataSet.Tables[0].NewRow();
+               // DataRow tRow = urs.test_tt_4_editDataSet.Tables[0].NewRow();
+              // DataRow rRow = phtt.test_tt_4_editDataSet.Tables[0].NewRow();
 
                 int rc = main.dataGridView1.RowCount + 1;
-                int tc = main.dataGridView1.RowCount + 1;
-                nRow[0] = rc;
-                nRow[1] = tbName.Text;
+               /* int tc = urs.dataGridView2.RowCount + 1;
+                int sc = phtt.dataGridView2.RowCount + 1;*/
+               // tRow[0] = rc;
+              //  nRow[0] = tc;
+               // rRow[0] = sc;
+                // nRow[1] = tbName.Text;
+                nRow[1] = rc;
+               // nRow[2] = phtt.dataGridView2.RowCount + 1;
+                nRow[2] = rc;
+               // rRow[0]= phtt.dataGridView2.RowCount + 1;
                 nRow[4] = tbPhone_em.Text;
                 nRow[4] = tbPhone_em.Text;
-               // nRow[2] = tc;
+                
                 main.test_tt_4_editDataSet.Tables[0].Rows.Add(nRow);
                 main.test_tt_4_editDataSet.Tables[0].AcceptChanges();
                 main.dataGridView1.Refresh();

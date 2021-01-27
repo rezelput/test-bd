@@ -30,14 +30,14 @@ namespace test_bd
                 DataTable dt = CreateDataTable();
                 dataGridView2.DataSource = dt;
             };
-            Form_test_tt ftt = new Form_test_tt();
+         /*   Form_test_tt ftt = new Form_test_tt();
             if (ftt.ShowDialog() == DialogResult.OK)
             {
                 toolStripMenuItem2.Click += (sender, e) =>
             {
                 dataGridView2.DataSource = ftt.dataGridView1.DataSource;
             };
-            };
+            };*/
 
             
         }
@@ -86,26 +86,40 @@ namespace test_bd
 
             dataGridView2.DataSource = dt;
         }
-        //void Update()
-       /* {
-            dataGridView1.Rows.Clear();
-             string fname = patсh;
-             string[] lines = File.ReadAllLines(fname);
-             string[] inpstr;
-             char[] delim = new char[] { '|' }; // Разделители
 
-             for (int i = 0; i < lines.Length; i++)
-             {
-                 if (lines[i] != null || lines[i] != "")
-                 {
-                     inpstr = lines[i].Split(delim);
-                     dataGridView1.Rows.Add(inpstr);
-                 }
-             }
-            
-            
-            }*/
-            private void toolStripMenuItem3_Click(object sender, EventArgs e)
+        private void toFormTestttToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form_test_tt f = new Form_test_tt();
+            f.ShowDialog();
+            this.Close();
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        //void Update()
+        /* {
+             dataGridView1.Rows.Clear();
+              string fname = patсh;
+              string[] lines = File.ReadAllLines(fname);
+              string[] inpstr;
+              char[] delim = new char[] { '|' }; // Разделители
+
+              for (int i = 0; i < lines.Length; i++)
+              {
+                  if (lines[i] != null || lines[i] != "")
+                  {
+                      inpstr = lines[i].Split(delim);
+                      dataGridView1.Rows.Add(inpstr);
+                  }
+              }
+
+
+             }*/
+        private void toolStripMenuItem3_Click(object sender, EventArgs e)
         {
             // Update();
             int i = dataGridView2.CurrentRow.Index;

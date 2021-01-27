@@ -23,14 +23,14 @@ namespace test_bd {
     [global::System.Xml.Serialization.XmlRootAttribute("test_tt_4_editDataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class test_tt_4_editDataSet : global::System.Data.DataSet {
-
+        
         public contactsDataTable tablecontacts;
-
-        public phoneDataTable tablephone;
-
-        public phone_typeDataTable tablephone_type;
-
-        public user_nameDataTable tableuser_name;
+        
+        private phoneDataTable tablephone;
+        
+        private phone_typeDataTable tablephone_type;
+        
+        private user_nameDataTable tableuser_name;
         
         private global::System.Data.DataRelation relationphonecontacts;
         
@@ -2674,7 +2674,7 @@ namespace test_bd.test_tt_4_editDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private void InitConnection() {
+        public void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
             this._connection.ConnectionString = global::test_bd.Properties.test_tt.Default.test_tt_4_editConnectionString;
         }

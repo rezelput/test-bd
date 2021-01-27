@@ -36,7 +36,7 @@ namespace test_bd
             this.ddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contactsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
@@ -45,6 +45,7 @@ namespace test_bd
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contactsTableAdapter = new test_bd.test_tt_4_editDataSetTableAdapters.contactsTableAdapter();
+            this.phone_typeTableAdapter1 = new test_bd.test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.contactsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).BeginInit();
@@ -112,6 +113,8 @@ namespace test_bd
             this.phonetypeidDataGridViewTextBoxColumn.DataPropertyName = "phone_type_id";
             this.phonetypeidDataGridViewTextBoxColumn.HeaderText = "phone_type_id";
             this.phonetypeidDataGridViewTextBoxColumn.Name = "phonetypeidDataGridViewTextBoxColumn";
+            this.phonetypeidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.phonetypeidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // phonenumberDataGridViewTextBoxColumn
             // 
@@ -152,20 +155,24 @@ namespace test_bd
             // userToolStripMenuItem
             // 
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.userToolStripMenuItem.Text = "user";
             this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
             // 
             // phoneToolStripMenuItem
             // 
             this.phoneToolStripMenuItem.Name = "phoneToolStripMenuItem";
-            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.phoneToolStripMenuItem.Text = "phone";
             this.phoneToolStripMenuItem.Click += new System.EventHandler(this.phoneToolStripMenuItem_Click);
             // 
             // contactsTableAdapter
             // 
             this.contactsTableAdapter.ClearBeforeFill = true;
+            // 
+            // phone_typeTableAdapter1
+            // 
+            this.phone_typeTableAdapter1.ClearBeforeFill = true;
             // 
             // Form_test_tt
             // 
@@ -199,14 +206,15 @@ namespace test_bd
         public test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter phone_typeTableAdapter;
         public test_tt_4_editDataSet test_tt_4_editDataSet;
         private System.Windows.Forms.BindingSource contactsBindingSource;
-        private test_tt_4_editDataSetTableAdapters.contactsTableAdapter contactsTableAdapter;
+        public test_tt_4_editDataSetTableAdapters.contactsTableAdapter contactsTableAdapter;
+        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phoneToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn ddDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phonetypeidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn phonetypeidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
-        private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phoneToolStripMenuItem;
+        public test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter phone_typeTableAdapter1;
     }
 }
 
