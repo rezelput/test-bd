@@ -66,6 +66,8 @@ namespace test_bd
         }
         private void phone_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_edit2DataSet.phone". При необходимости она может быть перемещена или удалена.
+            this.phoneTableAdapter2.Fill(this.test_tt_4_edit2DataSet.phone);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_edit1DataSet11.phone". При необходимости она может быть перемещена или удалена.
             //this.phoneTableAdapter1.Fill(this.test_tt_4_edit1DataSet11.phone);
             cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt 4 edit2.mdb");
@@ -78,7 +80,7 @@ namespace test_bd
             //this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
 
             dataGridView2.DataSource = fs.Tables[0];
-            this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
+           // this.phoneTableAdapter.Fill(this.test_tt_4_edit2DataSet.phone);
 
         }
 
@@ -96,7 +98,7 @@ namespace test_bd
         private void toolStripMenuItem2_Click(object sender, EventArgs e)
         {
             CreateDataTable();
-            string catBD = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt_4_edit.mdb";
+            string catBD = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt 4 edit2.mdb";
             string conBD = string.Format("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=test_tt_4_edit.mdb", catBD);
 
             OleDbConnection connection = new OleDbConnection(conBD);

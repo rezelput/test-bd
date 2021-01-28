@@ -139,12 +139,12 @@ namespace test_bd
 
         #endregion
        
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource testttDataSet1BindingSource;
+       // private System.Windows.Forms.DataGridView dataGridView1;
+        //private System.Windows.Forms.BindingSource testttDataSet1BindingSource;
         private System.Windows.Forms.BindingSource phonetypeBindingSource;
        
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phonetypeDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+       // private System.Windows.Forms.DataGridViewTextBoxColumn phonetypeDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource usernameBindingSource;
         private test_tt_4_editDataSetTableAdapters.user_nameTableAdapter user_nameTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;

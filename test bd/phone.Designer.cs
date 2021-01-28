@@ -45,6 +45,10 @@ namespace test_bd
             this.test_tt_4_edit1DataSet1 = new test_bd.test_tt_4_edit1DataSet();
             this.testtt4edit1DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.phoneTableAdapter1 = new test_bd.test_tt_4_edit1DataSet1TableAdapters.phoneTableAdapter();
+            this.test_tt_4_edit2DataSet = new test_bd.test_tt_4_edit2DataSet();
+            this.testtt4edit2DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneTableAdapter2 = new test_bd.test_tt_4_edit2DataSetTableAdapters.phoneTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +61,9 @@ namespace test_bd
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit2DataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit2DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -67,7 +74,7 @@ namespace test_bd
             this.idDataGridViewTextBoxColumn,
             this.phonetypeidDataGridViewTextBoxColumn,
             this.phoneDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.phoneBindingSource1;
+            this.dataGridView2.DataSource = this.phoneBindingSource2;
             this.dataGridView2.Location = new System.Drawing.Point(12, 43);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(351, 278);
@@ -158,6 +165,25 @@ namespace test_bd
             // 
             this.phoneTableAdapter1.ClearBeforeFill = true;
             // 
+            // test_tt_4_edit2DataSet
+            // 
+            this.test_tt_4_edit2DataSet.DataSetName = "test_tt_4_edit2DataSet";
+            this.test_tt_4_edit2DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testtt4edit2DataSetBindingSource
+            // 
+            this.testtt4edit2DataSetBindingSource.DataSource = this.test_tt_4_edit2DataSet;
+            this.testtt4edit2DataSetBindingSource.Position = 0;
+            // 
+            // phoneBindingSource2
+            // 
+            this.phoneBindingSource2.DataMember = "phone";
+            this.phoneBindingSource2.DataSource = this.testtt4edit2DataSetBindingSource;
+            // 
+            // phoneTableAdapter2
+            // 
+            this.phoneTableAdapter2.ClearBeforeFill = true;
+            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
@@ -199,6 +225,9 @@ namespace test_bd
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit2DataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit2DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -220,6 +249,10 @@ namespace test_bd
         private System.Windows.Forms.BindingSource testtt4edit1DataSet1BindingSource;
         private System.Windows.Forms.BindingSource phoneBindingSource1;
         private test_tt_4_edit1DataSet1TableAdapters.phoneTableAdapter phoneTableAdapter1;
+        private System.Windows.Forms.BindingSource testtt4edit2DataSetBindingSource;
+        private test_tt_4_edit2DataSet test_tt_4_edit2DataSet;
+        private System.Windows.Forms.BindingSource phoneBindingSource2;
+        private test_tt_4_edit2DataSetTableAdapters.phoneTableAdapter phoneTableAdapter2;
         private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewComboBoxColumn phonetypeidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
