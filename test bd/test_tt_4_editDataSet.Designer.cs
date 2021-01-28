@@ -2272,7 +2272,7 @@ namespace test_bd.test_tt_4_editDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::test_bd.Properties.test_tt.Default.test_tt_4_editConnectionString;
+            this._connection.ConnectionString = global::test_bd.Properties.Settings.Default.test_tt_4_edit1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2674,7 +2674,7 @@ namespace test_bd.test_tt_4_editDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public void InitConnection() {
+        private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
             this._connection.ConnectionString = global::test_bd.Properties.test_tt.Default.test_tt_4_editConnectionString;
         }
@@ -3016,7 +3016,7 @@ namespace test_bd.test_tt_4_editDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::test_bd.Properties.test_tt.Default.test_tt_4_editConnectionString;
+            this._connection.ConnectionString = global::test_bd.Properties.Settings.Default.test_tt_4_edit1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3328,7 +3328,7 @@ namespace test_bd.test_tt_4_editDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.OleDb.OleDbConnection();
-            this._connection.ConnectionString = global::test_bd.Properties.test_tt.Default.test_tt_4_editConnectionString;
+            this._connection.ConnectionString = global::test_bd.Properties.Settings.Default.test_tt_4_edit1ConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

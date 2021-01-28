@@ -32,20 +32,31 @@ namespace test_bd
             this.components = new System.ComponentModel.Container();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.phoneBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
+            this.test_tt_4_edit1DataSet = new test_bd.test_tt_4_editDataSet();
             this.phoneTableAdapter = new test_bd.test_tt_4_editDataSetTableAdapters.phoneTableAdapter();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.formToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toFormTestttToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonetypeid = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.phonedg = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.test_tt_4_edit1DataSet1 = new test_bd.test_tt_4_edit1DataSet();
+            this.testtt4edit1DataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.test_tt_4_edit1DataSet11 = new test_bd.test_tt_4_edit1DataSet1();
+            this.testtt4edit1DataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneTableAdapter1 = new test_bd.test_tt_4_edit1DataSet1TableAdapters.phoneTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.phoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet11BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView2
@@ -53,10 +64,10 @@ namespace test_bd
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.phonetypeid,
-            this.phonedg});
-            this.dataGridView2.DataSource = this.phoneBindingSource;
+            this.idDataGridViewTextBoxColumn,
+            this.phonetypeidDataGridViewTextBoxColumn,
+            this.phoneDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.phoneBindingSource1;
             this.dataGridView2.Location = new System.Drawing.Point(147, 68);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(344, 150);
@@ -66,12 +77,12 @@ namespace test_bd
             // phoneBindingSource
             // 
             this.phoneBindingSource.DataMember = "phone";
-            this.phoneBindingSource.DataSource = this.test_tt_4_editDataSet;
+            this.phoneBindingSource.DataSource = this.test_tt_4_edit1DataSet;
             // 
-            // test_tt_4_editDataSet
+            // test_tt_4_edit1DataSet
             // 
-            this.test_tt_4_editDataSet.DataSetName = "test_tt_4_editDataSet";
-            this.test_tt_4_editDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.test_tt_4_edit1DataSet.DataSetName = "test_tt_4_editDataSet";
+            this.test_tt_4_edit1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // phoneTableAdapter
             // 
@@ -118,25 +129,54 @@ namespace test_bd
             this.toFormTestttToolStripMenuItem.Text = "to form test_tt";
             this.toFormTestttToolStripMenuItem.Click += new System.EventHandler(this.toFormTestttToolStripMenuItem_Click);
             // 
-            // id
+            // test_tt_4_edit1DataSet1
             // 
-            this.id.DataPropertyName = "id";
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
+            this.test_tt_4_edit1DataSet1.DataSetName = "test_tt_4_edit1DataSet";
+            this.test_tt_4_edit1DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // phonetypeid
+            // testtt4edit1DataSet1BindingSource
             // 
-            this.phonetypeid.DataPropertyName = "phone_type_id";
-            this.phonetypeid.HeaderText = "phone_type_id";
-            this.phonetypeid.Name = "phonetypeid";
-            this.phonetypeid.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.phonetypeid.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.testtt4edit1DataSet1BindingSource.DataSource = this.test_tt_4_edit1DataSet1;
+            this.testtt4edit1DataSet1BindingSource.Position = 0;
             // 
-            // phonedg
+            // test_tt_4_edit1DataSet11
             // 
-            this.phonedg.DataPropertyName = "phone";
-            this.phonedg.HeaderText = "phone";
-            this.phonedg.Name = "phonedg";
+            this.test_tt_4_edit1DataSet11.DataSetName = "test_tt_4_edit1DataSet1";
+            this.test_tt_4_edit1DataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // testtt4edit1DataSet11BindingSource
+            // 
+            this.testtt4edit1DataSet11BindingSource.DataSource = this.test_tt_4_edit1DataSet11;
+            this.testtt4edit1DataSet11BindingSource.Position = 0;
+            // 
+            // phoneBindingSource1
+            // 
+            this.phoneBindingSource1.DataMember = "phone";
+            this.phoneBindingSource1.DataSource = this.testtt4edit1DataSet11BindingSource;
+            // 
+            // phoneTableAdapter1
+            // 
+            this.phoneTableAdapter1.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            // 
+            // phonetypeidDataGridViewTextBoxColumn
+            // 
+            this.phonetypeidDataGridViewTextBoxColumn.DataPropertyName = "phone_type_id";
+            this.phonetypeidDataGridViewTextBoxColumn.HeaderText = "phone_type_id";
+            this.phonetypeidDataGridViewTextBoxColumn.Name = "phonetypeidDataGridViewTextBoxColumn";
+            this.phonetypeidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.phonetypeidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // phoneDataGridViewTextBoxColumn
+            // 
+            this.phoneDataGridViewTextBoxColumn.DataPropertyName = "phone";
+            this.phoneDataGridViewTextBoxColumn.HeaderText = "phone";
+            this.phoneDataGridViewTextBoxColumn.Name = "phoneDataGridViewTextBoxColumn";
             // 
             // phone
             // 
@@ -151,9 +191,14 @@ namespace test_bd
             this.Load += new System.EventHandler(this.phone_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_edit1DataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.testtt4edit1DataSet11BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,9 +213,15 @@ namespace test_bd
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem toFormTestttToolStripMenuItem;
         public System.Windows.Forms.DataGridView dataGridView2;
-        public test_tt_4_editDataSet test_tt_4_editDataSet;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewComboBoxColumn phonetypeid;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phonedg;
+        public test_tt_4_editDataSet test_tt_4_edit1DataSet;
+        private System.Windows.Forms.BindingSource testtt4edit1DataSet11BindingSource;
+        private test_tt_4_edit1DataSet1 test_tt_4_edit1DataSet11;
+        private test_tt_4_edit1DataSet test_tt_4_edit1DataSet1;
+        private System.Windows.Forms.BindingSource testtt4edit1DataSet1BindingSource;
+        private System.Windows.Forms.BindingSource phoneBindingSource1;
+        private test_tt_4_edit1DataSet1TableAdapters.phoneTableAdapter phoneTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewComboBoxColumn phonetypeidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn;
     }
 }

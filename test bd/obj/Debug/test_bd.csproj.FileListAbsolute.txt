@@ -20,3 +20,4 @@ B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\Newtonsof
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\System.Security.Cryptography.Cng.xml
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.csproj.CopyComplete
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.phone.resources
+B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test_tt 4 edit1.mdb

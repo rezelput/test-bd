@@ -38,7 +38,31 @@ namespace test_bd
             int ID = 0;
         */
             InitializeComponent();
+            test_tt();
+            ForLoad_testTT();
           //  DisplayData();
+        }
+        void ForLoad_testTT()
+        {
+            OleDbConnection connect = new OleDbConnection();
+            connect.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt 4 edit1.mdb";
+            connect.Open();
+            //MessageBox.Show("База подключена");
+
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connect;
+            command.CommandText = "SELECT phone_type FROM phone_type";
+
+            OleDbDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                
+               // phonetypeidDataGridViewTextBoxColumn.Items.Add(reader["phone_type"].ToString());
+                //comboBox1.Items.Add(course);
+            }
+
+            connect.Close();
         }
         void test_tt()
         {
@@ -133,6 +157,24 @@ namespace test_bd
         private void справочникToolStripMenuItem_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Закрыть форму?", "форма", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+
+            if (result == DialogResult.No) //Если нажал нет
+            {
+                string net = "-->";
+                MessageBox.Show(net);
+            }
+
+            if (result == DialogResult.Yes) //Если нажал Да
+            {
+                this.Close();
+
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

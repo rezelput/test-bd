@@ -33,23 +33,24 @@ namespace test_bd
             this.AddForm = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.contactsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.справочникToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contactsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.test_tt_4_editDataSet = new test_bd.test_tt_4_editDataSet();
             this.contactsTableAdapter = new test_bd.test_tt_4_editDataSetTableAdapters.contactsTableAdapter();
             this.phone_typeTableAdapter1 = new test_bd.test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ddDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonetypeidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contactsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // AddForm
@@ -90,6 +91,66 @@ namespace test_bd
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.справочникToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(576, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // справочникToolStripMenuItem
+            // 
+            this.справочникToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.userToolStripMenuItem,
+            this.phoneToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.справочникToolStripMenuItem.Name = "справочникToolStripMenuItem";
+            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.справочникToolStripMenuItem.Text = "handbook";
+            this.справочникToolStripMenuItem.Click += new System.EventHandler(this.справочникToolStripMenuItem_Click);
+            // 
+            // userToolStripMenuItem
+            // 
+            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.userToolStripMenuItem.Text = "user";
+            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
+            // 
+            // phoneToolStripMenuItem
+            // 
+            this.phoneToolStripMenuItem.Name = "phoneToolStripMenuItem";
+            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phoneToolStripMenuItem.Text = "phone";
+            this.phoneToolStripMenuItem.Click += new System.EventHandler(this.phoneToolStripMenuItem_Click);
+            // 
+            // contactsBindingSource
+            // 
+            this.contactsBindingSource.DataMember = "contacts";
+            this.contactsBindingSource.DataSource = this.test_tt_4_editDataSet;
+            // 
+            // test_tt_4_editDataSet
+            // 
+            this.test_tt_4_editDataSet.DataSetName = "test_tt_4_editDataSet";
+            this.test_tt_4_editDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // contactsTableAdapter
+            // 
+            this.contactsTableAdapter.ClearBeforeFill = true;
+            // 
+            // phone_typeTableAdapter1
+            // 
+            this.phone_typeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Text = "exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // ddDataGridViewTextBoxColumn
             // 
             this.ddDataGridViewTextBoxColumn.DataPropertyName = "dd";
@@ -114,65 +175,12 @@ namespace test_bd
             this.phonetypeidDataGridViewTextBoxColumn.HeaderText = "phone_type_id";
             this.phonetypeidDataGridViewTextBoxColumn.Name = "phonetypeidDataGridViewTextBoxColumn";
             this.phonetypeidDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.phonetypeidDataGridViewTextBoxColumn.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
             // phonenumberDataGridViewTextBoxColumn
             // 
             this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phone_number";
             this.phonenumberDataGridViewTextBoxColumn.HeaderText = "phone_number";
             this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
-            // 
-            // contactsBindingSource
-            // 
-            this.contactsBindingSource.DataMember = "contacts";
-            this.contactsBindingSource.DataSource = this.test_tt_4_editDataSet;
-            // 
-            // test_tt_4_editDataSet
-            // 
-            this.test_tt_4_editDataSet.DataSetName = "test_tt_4_editDataSet";
-            this.test_tt_4_editDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.справочникToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(576, 24);
-            this.menuStrip1.TabIndex = 4;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // справочникToolStripMenuItem
-            // 
-            this.справочникToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.userToolStripMenuItem,
-            this.phoneToolStripMenuItem});
-            this.справочникToolStripMenuItem.Name = "справочникToolStripMenuItem";
-            this.справочникToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
-            this.справочникToolStripMenuItem.Text = "handbook";
-            this.справочникToolStripMenuItem.Click += new System.EventHandler(this.справочникToolStripMenuItem_Click);
-            // 
-            // userToolStripMenuItem
-            // 
-            this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.userToolStripMenuItem.Text = "user";
-            this.userToolStripMenuItem.Click += new System.EventHandler(this.userToolStripMenuItem_Click);
-            // 
-            // phoneToolStripMenuItem
-            // 
-            this.phoneToolStripMenuItem.Name = "phoneToolStripMenuItem";
-            this.phoneToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.phoneToolStripMenuItem.Text = "phone";
-            this.phoneToolStripMenuItem.Click += new System.EventHandler(this.phoneToolStripMenuItem_Click);
-            // 
-            // contactsTableAdapter
-            // 
-            this.contactsTableAdapter.ClearBeforeFill = true;
-            // 
-            // phone_typeTableAdapter1
-            // 
-            this.phone_typeTableAdapter1.ClearBeforeFill = true;
             // 
             // Form_test_tt
             // 
@@ -188,10 +196,10 @@ namespace test_bd
             this.Text = "test_tt";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.contactsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.contactsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test_tt_4_editDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,12 +217,13 @@ namespace test_bd
         public test_tt_4_editDataSetTableAdapters.contactsTableAdapter contactsTableAdapter;
         private System.Windows.Forms.ToolStripMenuItem userToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phoneToolStripMenuItem;
+        public test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter phone_typeTableAdapter1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.DataGridViewTextBoxColumn ddDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idnameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewComboBoxColumn phonetypeidDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonetypeidDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
-        public test_tt_4_editDataSetTableAdapters.phone_typeTableAdapter phone_typeTableAdapter1;
     }
 }
 

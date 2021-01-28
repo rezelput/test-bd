@@ -30,6 +30,7 @@ namespace test_bd
                 DataTable dt = CreateDataTable();
                 dataGridView2.DataSource = dt;
             };
+            ForLoad_testTT();
          /*   Form_test_tt ftt = new Form_test_tt();
             if (ftt.ShowDialog() == DialogResult.OK)
             {
@@ -39,18 +40,41 @@ namespace test_bd
             };
             };*/
 
-            
-        }
 
+        }
+        void ForLoad_testTT()
+        {
+            OleDbConnection connect = new OleDbConnection();
+            connect.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt 4 edit1.mdb";
+            connect.Open();
+            //MessageBox.Show("База подключена");
+
+            OleDbCommand command = new OleDbCommand();
+            command.Connection = connect;
+            command.CommandText = "SELECT phone_type FROM phone_type";
+
+            OleDbDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+
+                phonetypeidDataGridViewTextBoxColumn.Items.Add(reader["phone_type"].ToString());
+                //comboBox1.Items.Add(course);
+            }
+
+            connect.Close();
+        }
         private void phone_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_edit1DataSet11.phone". При необходимости она может быть перемещена или удалена.
+            this.phoneTableAdapter1.Fill(this.test_tt_4_edit1DataSet11.phone);
             cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt_4_edit.mdb");
             sa = new OleDbDataAdapter("select * from phone", cot1);
             cot1.Open();
             fs = new DataSet();
             sa.Fill(fs, "phone");
             // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_editDataSet.phone". При необходимости она может быть перемещена или удалена.
-            this.phoneTableAdapter.Fill(this.test_tt_4_editDataSet.phone);
+            this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
 
         }
 
@@ -123,7 +147,7 @@ namespace test_bd
         {
             // Update();
             int i = dataGridView2.CurrentRow.Index;
-            this.phoneTableAdapter.Fill(this.test_tt_4_editDataSet.phone);
+            this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
             dataGridView2.CurrentCell = dataGridView2[0, i];
         }
 

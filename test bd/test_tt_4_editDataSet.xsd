@@ -2,9 +2,10 @@
 <xs:schema id="test_tt_4_editDataSet" targetNamespace="http://tempuri.org/test_tt_4_editDataSet.xsd" xmlns:mstns="http://tempuri.org/test_tt_4_editDataSet.xsd" xmlns="http://tempuri.org/test_tt_4_editDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="test_tt_4_editConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="test_tt_4_editConnectionString (Settings)" PropertyReference="ApplicationSettings.test_bd.Properties.Settings.GlobalReference.Default.test_tt_4_editConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="test_tt_4_editConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="test_tt_4_editConnectionString (Settings)" PropertyReference="ApplicationSettings.test_bd.Properties.Settings.GlobalReference.Default.test_tt_4_editConnectionString" Provider="System.Data.OleDb" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="test_tt_4_edit1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="test_tt_4_edit1ConnectionString (Settings)" PropertyReference="ApplicationSettings.test_bd.Properties.Settings.GlobalReference.Default.test_tt_4_edit1ConnectionString" Provider="System.Data.OleDb" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="contactsTableAdapter" GeneratorDataComponentClassName="contactsTableAdapter" Name="contacts" UserDataComponentName="contactsTableAdapter">
@@ -227,7 +228,7 @@
   <xs:element name="test_tt_4_editDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="test_tt_4_editDataSet" msprop:Generator_UserDSName="test_tt_4_editDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="contacts" msprop:Generator_TableClassName="contactsDataTable" msprop:Generator_TableVarName="tablecontacts" msprop:Generator_TablePropName="contacts" msprop:Generator_RowDeletingName="contactsRowDeleting" msprop:Generator_RowChangingName="contactsRowChanging" msprop:Generator_RowEvHandlerName="contactsRowChangeEventHandler" msprop:Generator_RowDeletedName="contactsRowDeleted" msprop:Generator_UserTableName="contacts" msprop:Generator_RowChangedName="contactsRowChanged" msprop:Generator_RowEvArgName="contactsRowChangeEvent" msprop:Generator_RowClassName="contactsRow">
+        <xs:element name="contacts" msprop:Generator_TableClassName="contactsDataTable" msprop:Generator_TableVarName="tablecontacts" msprop:Generator_RowChangedName="contactsRowChanged" msprop:Generator_TablePropName="contacts" msprop:Generator_RowDeletingName="contactsRowDeleting" msprop:Generator_RowChangingName="contactsRowChanging" msprop:Generator_RowEvHandlerName="contactsRowChangeEventHandler" msprop:Generator_RowDeletedName="contactsRowDeleted" msprop:Generator_RowClassName="contactsRow" msprop:Generator_UserTableName="contacts" msprop:Generator_RowEvArgName="contactsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="dd" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columndd" msprop:Generator_ColumnPropNameInRow="dd" msprop:Generator_ColumnPropNameInTable="ddColumn" msprop:Generator_UserColumnName="dd" type="xs:int" />
@@ -244,7 +245,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="phone" msprop:Generator_TableClassName="phoneDataTable" msprop:Generator_TableVarName="tablephone" msprop:Generator_TablePropName="phone" msprop:Generator_RowDeletingName="phoneRowDeleting" msprop:Generator_RowChangingName="phoneRowChanging" msprop:Generator_RowEvHandlerName="phoneRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneRowDeleted" msprop:Generator_UserTableName="phone" msprop:Generator_RowChangedName="phoneRowChanged" msprop:Generator_RowEvArgName="phoneRowChangeEvent" msprop:Generator_RowClassName="phoneRow">
+        <xs:element name="phone" msprop:Generator_TableClassName="phoneDataTable" msprop:Generator_TableVarName="tablephone" msprop:Generator_RowChangedName="phoneRowChanged" msprop:Generator_TablePropName="phone" msprop:Generator_RowDeletingName="phoneRowDeleting" msprop:Generator_RowChangingName="phoneRowChanging" msprop:Generator_RowEvHandlerName="phoneRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneRowDeleted" msprop:Generator_RowClassName="phoneRow" msprop:Generator_UserTableName="phone" msprop:Generator_RowEvArgName="phoneRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -253,7 +254,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="phone_type" msprop:Generator_TableClassName="phone_typeDataTable" msprop:Generator_TableVarName="tablephone_type" msprop:Generator_TablePropName="phone_type" msprop:Generator_RowDeletingName="phone_typeRowDeleting" msprop:Generator_RowChangingName="phone_typeRowChanging" msprop:Generator_RowEvHandlerName="phone_typeRowChangeEventHandler" msprop:Generator_RowDeletedName="phone_typeRowDeleted" msprop:Generator_UserTableName="phone_type" msprop:Generator_RowChangedName="phone_typeRowChanged" msprop:Generator_RowEvArgName="phone_typeRowChangeEvent" msprop:Generator_RowClassName="phone_typeRow">
+        <xs:element name="phone_type" msprop:Generator_TableClassName="phone_typeDataTable" msprop:Generator_TableVarName="tablephone_type" msprop:Generator_RowChangedName="phone_typeRowChanged" msprop:Generator_TablePropName="phone_type" msprop:Generator_RowDeletingName="phone_typeRowDeleting" msprop:Generator_RowChangingName="phone_typeRowChanging" msprop:Generator_RowEvHandlerName="phone_typeRowChangeEventHandler" msprop:Generator_RowDeletedName="phone_typeRowDeleted" msprop:Generator_RowClassName="phone_typeRow" msprop:Generator_UserTableName="phone_type" msprop:Generator_RowEvArgName="phone_typeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -267,7 +268,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="user_name" msprop:Generator_TableClassName="user_nameDataTable" msprop:Generator_TableVarName="tableuser_name" msprop:Generator_TablePropName="user_name" msprop:Generator_RowDeletingName="user_nameRowDeleting" msprop:Generator_RowChangingName="user_nameRowChanging" msprop:Generator_RowEvHandlerName="user_nameRowChangeEventHandler" msprop:Generator_RowDeletedName="user_nameRowDeleted" msprop:Generator_UserTableName="user_name" msprop:Generator_RowChangedName="user_nameRowChanged" msprop:Generator_RowEvArgName="user_nameRowChangeEvent" msprop:Generator_RowClassName="user_nameRow">
+        <xs:element name="user_name" msprop:Generator_TableClassName="user_nameDataTable" msprop:Generator_TableVarName="tableuser_name" msprop:Generator_RowChangedName="user_nameRowChanged" msprop:Generator_TablePropName="user_name" msprop:Generator_RowDeletingName="user_nameRowDeleting" msprop:Generator_RowChangingName="user_nameRowChanging" msprop:Generator_RowEvHandlerName="user_nameRowChangeEventHandler" msprop:Generator_RowDeletedName="user_nameRowDeleted" msprop:Generator_RowClassName="user_nameRow" msprop:Generator_UserTableName="user_name" msprop:Generator_RowEvArgName="user_nameRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -302,9 +303,9 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="phonecontacts" msdata:parent="phone" msdata:child="contacts" msdata:parentkey="id" msdata:childkey="phone_id" msprop:Generator_UserChildTable="contacts" msprop:Generator_ChildPropName="GetcontactsRows" msprop:Generator_UserRelationName="phonecontacts" msprop:Generator_RelationVarName="relationphonecontacts" msprop:Generator_UserParentTable="phone" msprop:Generator_ParentPropName="phoneRow" />
-      <msdata:Relationship name="user_namecontacts" msdata:parent="user_name" msdata:child="contacts" msdata:parentkey="id" msdata:childkey="id_name" msprop:Generator_UserChildTable="contacts" msprop:Generator_ChildPropName="GetcontactsRows" msprop:Generator_UserRelationName="user_namecontacts" msprop:Generator_RelationVarName="relationuser_namecontacts" msprop:Generator_UserParentTable="user_name" msprop:Generator_ParentPropName="user_nameRow" />
-      <msdata:Relationship name="phone_typephone" msdata:parent="phone_type" msdata:child="phone" msdata:parentkey="id" msdata:childkey="phone_type_id" msprop:Generator_UserChildTable="phone" msprop:Generator_ChildPropName="GetphoneRows" msprop:Generator_UserRelationName="phone_typephone" msprop:Generator_RelationVarName="relationphone_typephone" msprop:Generator_UserParentTable="phone_type" msprop:Generator_ParentPropName="phone_typeRow" />
+      <msdata:Relationship name="phonecontacts" msdata:parent="phone" msdata:child="contacts" msdata:parentkey="id" msdata:childkey="phone_id" msprop:Generator_UserChildTable="contacts" msprop:Generator_ChildPropName="GetcontactsRows" msprop:Generator_UserRelationName="phonecontacts" msprop:Generator_ParentPropName="phoneRow" msprop:Generator_RelationVarName="relationphonecontacts" msprop:Generator_UserParentTable="phone" />
+      <msdata:Relationship name="user_namecontacts" msdata:parent="user_name" msdata:child="contacts" msdata:parentkey="id" msdata:childkey="id_name" msprop:Generator_UserChildTable="contacts" msprop:Generator_ChildPropName="GetcontactsRows" msprop:Generator_UserRelationName="user_namecontacts" msprop:Generator_ParentPropName="user_nameRow" msprop:Generator_RelationVarName="relationuser_namecontacts" msprop:Generator_UserParentTable="user_name" />
+      <msdata:Relationship name="phone_typephone" msdata:parent="phone_type" msdata:child="phone" msdata:parentkey="id" msdata:childkey="phone_type_id" msprop:Generator_UserChildTable="phone" msprop:Generator_ChildPropName="GetphoneRows" msprop:Generator_UserRelationName="phone_typephone" msprop:Generator_ParentPropName="phone_typeRow" msprop:Generator_RelationVarName="relationphone_typephone" msprop:Generator_UserParentTable="phone_type" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

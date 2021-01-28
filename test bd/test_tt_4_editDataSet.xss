@@ -8,7 +8,7 @@
   <Shapes>
     <Shape ID="DesignTable:contacts" ZOrder="7" X="70" Y="70" Height="172" Width="193" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="121" />
     <Shape ID="DesignTable:phone" ZOrder="6" X="333" Y="70" Height="134" Width="181" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="83" />
-    <Shape ID="DesignTable:phone_type" ZOrder="1" X="591" Y="71" Height="115" Width="212" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
+    <Shape ID="DesignTable:phone_type" ZOrder="2" X="592" Y="71" Height="115" Width="212" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
     <Shape ID="DesignTable:user_name" ZOrder="5" X="316" Y="436" Height="115" Width="206" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="64" />
   </Shapes>
   <Connectors>
@@ -40,10 +40,10 @@
         </Point>
       </RoutePoints>
     </Connector>
-    <Connector ID="DesignRelation:phone_typephone" ZOrder="2" LineWidth="11">
+    <Connector ID="DesignRelation:phone_typephone" ZOrder="1" LineWidth="11">
       <RoutePoints>
         <Point>
-          <X>591</X>
+          <X>592</X>
           <Y>128</Y>
         </Point>
         <Point>

@@ -10,7 +10,8 @@
 
 namespace test_bd.Properties
 {
-    internal class Settings
+    class Setting
     {
+
     }
 }
