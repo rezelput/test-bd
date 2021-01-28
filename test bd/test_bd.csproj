@@ -95,6 +95,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>test_tt_4_edit1DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="test_tt_4_edit1DataSet1.cs">
+      <DependentUpon>test_tt_4_edit1DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="test_tt_4_edit1DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

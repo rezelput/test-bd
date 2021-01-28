@@ -114,22 +114,16 @@
   <xs:element name="test_tt_4_edit1DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="test_tt_4_edit1DataSet1" msprop:Generator_UserDSName="test_tt_4_edit1DataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="phone" msprop:Generator_TableClassName="phoneDataTable" msprop:Generator_TableVarName="tablephone" msprop:Generator_TablePropName="phone" msprop:Generator_RowDeletingName="phoneRowDeleting" msprop:Generator_RowChangingName="phoneRowChanging" msprop:Generator_RowEvHandlerName="phoneRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneRowDeleted" msprop:Generator_UserTableName="phone" msprop:Generator_RowChangedName="phoneRowChanged" msprop:Generator_RowEvArgName="phoneRowChangeEvent" msprop:Generator_RowClassName="phoneRow">
+        <xs:element name="phone" msprop:Generator_TableClassName="phoneDataTable" msprop:Generator_TableVarName="tablephone" msprop:Generator_RowChangedName="phoneRowChanged" msprop:Generator_TablePropName="phone" msprop:Generator_RowDeletingName="phoneRowDeleting" msprop:Generator_RowChangingName="phoneRowChanging" msprop:Generator_RowEvHandlerName="phoneRowChangeEventHandler" msprop:Generator_RowDeletedName="phoneRowDeleted" msprop:Generator_RowClassName="phoneRow" msprop:Generator_UserTableName="phone" msprop:Generator_RowEvArgName="phoneRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
               <xs:element name="phone_type_id" msprop:Generator_ColumnVarNameInTable="columnphone_type_id" msprop:Generator_ColumnPropNameInRow="phone_type_id" msprop:Generator_ColumnPropNameInTable="phone_type_idColumn" msprop:Generator_UserColumnName="phone_type_id" type="xs:int" minOccurs="0" />
-              <xs:element name="phone" msprop:Generator_ColumnVarNameInTable="columnphone" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_UserColumnName="phone" minOccurs="0">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="50" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
+              <xs:element name="phone" msdata:DataType="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnphone" msprop:Generator_ColumnPropNameInRow="phone" msprop:Generator_ColumnPropNameInTable="phoneColumn" msprop:Generator_UserColumnName="phone" type="xs:anyType" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="phone_type" msprop:Generator_TableClassName="phone_typeDataTable" msprop:Generator_TableVarName="tablephone_type" msprop:Generator_TablePropName="phone_type" msprop:Generator_RowDeletingName="phone_typeRowDeleting" msprop:Generator_RowChangingName="phone_typeRowChanging" msprop:Generator_RowEvHandlerName="phone_typeRowChangeEventHandler" msprop:Generator_RowDeletedName="phone_typeRowDeleted" msprop:Generator_UserTableName="phone_type" msprop:Generator_RowChangedName="phone_typeRowChanged" msprop:Generator_RowEvArgName="phone_typeRowChangeEvent" msprop:Generator_RowClassName="phone_typeRow">
+        <xs:element name="phone_type" msprop:Generator_TableClassName="phone_typeDataTable" msprop:Generator_TableVarName="tablephone_type" msprop:Generator_RowChangedName="phone_typeRowChanged" msprop:Generator_TablePropName="phone_type" msprop:Generator_RowDeletingName="phone_typeRowDeleting" msprop:Generator_RowChangingName="phone_typeRowChanging" msprop:Generator_RowEvHandlerName="phone_typeRowChangeEventHandler" msprop:Generator_RowDeletedName="phone_typeRowDeleted" msprop:Generator_RowClassName="phone_typeRow" msprop:Generator_UserTableName="phone_type" msprop:Generator_RowEvArgName="phone_typeRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
@@ -156,7 +150,7 @@
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="phone_typephone" msdata:parent="phone_type" msdata:child="phone" msdata:parentkey="id" msdata:childkey="phone_type_id" msprop:Generator_UserChildTable="phone" msprop:Generator_ChildPropName="GetphoneRows" msprop:Generator_UserRelationName="phone_typephone" msprop:Generator_RelationVarName="relationphone_typephone" msprop:Generator_UserParentTable="phone_type" msprop:Generator_ParentPropName="phone_typeRow" />
+      <msdata:Relationship name="phone_typephone" msdata:parent="phone_type" msdata:child="phone" msdata:parentkey="id" msdata:childkey="phone_type_id" msprop:Generator_UserChildTable="phone" msprop:Generator_ChildPropName="GetphoneRows" msprop:Generator_UserRelationName="phone_typephone" msprop:Generator_ParentPropName="phone_typeRow" msprop:Generator_RelationVarName="relationphone_typephone" msprop:Generator_UserParentTable="phone_type" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>

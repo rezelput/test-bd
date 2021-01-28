@@ -36,13 +36,11 @@ namespace test_bd
         private void button1_Click(object sender, EventArgs e)
         {
             Form_test_tt main = this.Owner as Form_test_tt;
-            user_name urs = this.Owner as user_name;
-            phone phtt = this.Owner as phone;
+            
             if (main != null)
             {
                 DataRow nRow = main.test_tt_4_editDataSet.Tables[0].NewRow();
-               // DataRow tRow = urs.test_tt_4_editDataSet.Tables[0].NewRow();
-               DataRow rRow = phtt.test_tt_4_edit1DataSet.Tables[0].NewRow();
+              
 
                 int rc = main.dataGridView1.RowCount + 1;
                /* int tc = urs.dataGridView2.RowCount + 1;
@@ -52,18 +50,30 @@ namespace test_bd
                // rRow[0] = sc;
                 // nRow[1] = tbName.Text;
                 nRow[1] = rc;
-                nRow[2] = phtt.dataGridView2.RowCount + 1;
+                nRow[2] = main.dataGridView1.RowCount + 1;
                 //nRow[2] = rc;
                 // rRow[0]= phtt.dataGridView2.RowCount + 1;
                 
                 nRow[4] = tbPhone_em.Text;
-                rRow[2] = tbPhone_em.Text;
-                
+                // rRow[2] = tbPhone_em.Text;
+                if (BoxType.SelectedIndex == 0)
+                {
+                    nRow[3] = BoxType.SelectedIndex == 0;
+                }
+                else if (BoxType.SelectedIndex == 1)
+                {
+                    nRow[3] = BoxType.SelectedIndex == 1;
+                }
+                else if (BoxType.SelectedIndex == 2)
+                {
+                    nRow[3] = BoxType.SelectedIndex == 2; 
+                }
                 main.test_tt_4_editDataSet.Tables[0].Rows.Add(nRow);
                 main.test_tt_4_editDataSet.Tables[0].AcceptChanges();
                 main.dataGridView1.Refresh();
                 tbName.Text = "";
                 tbPhone_em.Text = "";
+              
             }
 
         }
@@ -94,7 +104,6 @@ namespace test_bd
 
         private void tp2_Click(object sender, EventArgs e)
         {
-            this.tbPhone_em.Mask = @"L#LLL@LLLLL.ru";
             
         }
 
@@ -102,7 +111,26 @@ namespace test_bd
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            this.tbPhone_em.Mask = @"+00-000-000";
+                if (BoxType.SelectedIndex == 0)
+                {
+                    this.tbPhone_em.Mask = @"+00-000-000";
+                }
+                else if (BoxType.SelectedIndex == 1)
+                {
+                    this.tbPhone_em.Mask = @"+00-000-000";
+                   
+                }
+                else if (BoxType.SelectedIndex == 2)
+                {
+                    this.tbPhone_em.Mask = @"L#LLL@LLLLL.ru";
+                    
+                }
+        }
+
+        private void tbPhone_em_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+            
+            
         }
     }
 }

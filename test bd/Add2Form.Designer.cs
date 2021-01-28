@@ -109,6 +109,7 @@ namespace test_bd
             this.tbPhone_em.Name = "tbPhone_em";
             this.tbPhone_em.Size = new System.Drawing.Size(170, 20);
             this.tbPhone_em.TabIndex = 7;
+            this.tbPhone_em.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.tbPhone_em_MaskInputRejected);
             // 
             // phone_typeTableAdapter1
             // 

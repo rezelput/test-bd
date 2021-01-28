@@ -421,7 +421,7 @@ namespace test_bd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public phoneRow AddphoneRow(phone_typeRow parentphone_typeRowByphone_typephone, string phone) {
+            public phoneRow AddphoneRow(phone_typeRow parentphone_typeRowByphone_typephone, object phone) {
                 phoneRow rowphoneRow = ((phoneRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -471,7 +471,7 @@ namespace test_bd {
                 base.Columns.Add(this.columnid);
                 this.columnphone_type_id = new global::System.Data.DataColumn("phone_type_id", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnphone_type_id);
-                this.columnphone = new global::System.Data.DataColumn("phone", typeof(string), null, global::System.Data.MappingType.Element);
+                this.columnphone = new global::System.Data.DataColumn("phone", typeof(object), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnphone);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnid}, true));
@@ -480,7 +480,6 @@ namespace test_bd {
                 this.columnid.AutoIncrementStep = -1;
                 this.columnid.AllowDBNull = false;
                 this.columnid.Unique = true;
-                this.columnphone.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -926,10 +925,10 @@ namespace test_bd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string phone {
+            public object phone {
                 get {
                     try {
-                        return ((string)(this[this.tablephone.phoneColumn]));
+                        return ((object)(this[this.tablephone.phoneColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("Значение для столбца \'phone\' в таблице \'phone\' равно DBNull.", e);
