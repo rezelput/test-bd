@@ -58,7 +58,7 @@ namespace test_bd
             while (reader.Read())
             {
 
-                //phonetypeidDataGridViewTextBoxColumn.Items.Add(reader["phone_type"].ToString());
+                phonetypeidDataGridViewTextBoxColumn.Items.Add(reader["phone_type"].ToString());
                 //comboBox1.Items.Add(course);
             }
 
@@ -68,12 +68,16 @@ namespace test_bd
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_edit1DataSet11.phone". При необходимости она может быть перемещена или удалена.
             //this.phoneTableAdapter1.Fill(this.test_tt_4_edit1DataSet11.phone);
-            cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt_4_edit.mdb");
+            cot1 = new OleDbConnection("Provider=Microsoft.Jet.OLEDB.4.0;Data Source = test_tt 4 edit2.mdb");
             sa = new OleDbDataAdapter("select * from phone", cot1);
             cot1.Open();
             fs = new DataSet();
             sa.Fill(fs, "phone");
             // TODO: данная строка кода позволяет загрузить данные в таблицу "test_tt_4_editDataSet.phone". При необходимости она может быть перемещена или удалена.
+
+            //this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
+
+            dataGridView2.DataSource = fs.Tables[0];
             this.phoneTableAdapter.Fill(this.test_tt_4_edit1DataSet.phone);
 
         }

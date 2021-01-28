@@ -26,7 +26,7 @@ namespace test_bd.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"|DataDirectory|\\test_tt 4 edit1.mdb" +
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=\"|DataDirectory|\\test_tt 4 edit2.mdb" +
             "\";Persist Security Info=True")]
         public string test_tt_4_edit1ConnectionString {
             get {
