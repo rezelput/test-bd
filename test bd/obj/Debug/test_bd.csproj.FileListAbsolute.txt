@@ -22,3 +22,27 @@ B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.c
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\obj\Debug\test_bd.phone.resources
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test_tt 4 edit1.mdb
 B:\кубгту 2 курс\курсач ИТ\test bd\test bd\bin\Debug\test_tt 4 edit2.mdb
+D:\GitHub\test-bd\test bd\bin\Debug\test_tt 4 edit.mdb
+D:\GitHub\test-bd\test bd\bin\Debug\test_tt 4 edit1.mdb
+D:\GitHub\test-bd\test bd\bin\Debug\test_tt 4 edit2.mdb
+D:\GitHub\test-bd\test bd\bin\Debug\test bd.exe.config
+D:\GitHub\test-bd\test bd\bin\Debug\test bd.exe
+D:\GitHub\test-bd\test bd\bin\Debug\test bd.pdb
+D:\GitHub\test-bd\test bd\bin\Debug\Microsoft.PowerBI.Api.dll
+D:\GitHub\test-bd\test bd\bin\Debug\Microsoft.Rest.ClientRuntime.dll
+D:\GitHub\test-bd\test bd\bin\Debug\Newtonsoft.Json.dll
+D:\GitHub\test-bd\test bd\bin\Debug\System.Security.Cryptography.Cng.dll
+D:\GitHub\test-bd\test bd\bin\Debug\Newtonsoft.Json.xml
+D:\GitHub\test-bd\test bd\bin\Debug\System.Security.Cryptography.Cng.xml
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.csprojAssemblyReference.cache
+D:\GitHub\test-bd\test bd\obj\Debug\test bd.exe.config
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.Add2Form.resources
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.phone.resources
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.user_name.resources
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.Form_test_tt.resources
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.Properties.Resources.resources
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.csproj.GenerateResource.cache
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.csproj.CoreCompileInputs.cache
+D:\GitHub\test-bd\test bd\obj\Debug\test_bd.csproj.CopyComplete
+D:\GitHub\test-bd\test bd\obj\Debug\test bd.exe
+D:\GitHub\test-bd\test bd\obj\Debug\test bd.pdb

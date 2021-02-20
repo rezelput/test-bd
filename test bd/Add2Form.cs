@@ -43,19 +43,12 @@ namespace test_bd
               
 
                 int rc = main.dataGridView1.RowCount + 1;
-               /* int tc = urs.dataGridView2.RowCount + 1;
-                int sc = phtt.dataGridView2.RowCount + 1;*/
-               // tRow[0] = rc;
-              //  nRow[0] = tc;
-               // rRow[0] = sc;
-                // nRow[1] = tbName.Text;
+               
                 nRow[1] = rc;
                 nRow[2] = main.dataGridView1.RowCount + 1;
-                //nRow[2] = rc;
-                // rRow[0]= phtt.dataGridView2.RowCount + 1;
                 
                 nRow[4] = tbPhone_em.Text;
-                // rRow[2] = tbPhone_em.Text;
+               
                 if (BoxType.SelectedIndex == 0)
                 {
                     nRow[3] = BoxType.SelectedIndex == 0;
